@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            Chat Application
+        </div>
+        <div class="chat-controls">
+            <div id="current-role">
+                <img id="current-role-img" src="superman.jpg" alt="Superman">
+                <span id="current-role-name">Superman</span>
+            </div>
+            <button onclick="switchRole()">Switch Role</button>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type a message">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
